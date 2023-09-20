@@ -8,6 +8,9 @@ import ThirdSection from '@/components/ThirdSection'
 import FourthSection from '@/components/FourthSection'
 import FifthSection from '@/components/FifthSection'
 import SixthSection from '@/components/SixthSection'
+import SeventhSection from '@/components/SeventhSection'
+import EightSection from '@/components/EightSection'
+import NinthSection from '@/components/NinthSection'
 const index = () => {
   const [show, setShow] = useState(false)
   return (
@@ -23,6 +26,9 @@ const index = () => {
       <FourthSection/>
       <FifthSection/>
       <SixthSection/>
+      <SeventhSection/>
+      <EightSection/>
+      <NinthSection/>
     </Box>
   )
 }

@@ -80,7 +80,7 @@ const Nav = () => {
                         </HStack>
                     }
                     {
-                        toggleSer && < VStack display={["block", "block", "none"]} textAlign={"center"} onMouseLeave={() => setToggleSer(false)}   >
+                        toggleSer && < VStack  display={["block", "block", "none"]} textAlign={"center"} onMouseLeave={() => setToggleSer(false)}   >
                             <Text><Link href="">My Services</Link></Text>
                             <Text my={"3"}><Link href="">Rewrite My Essay</Link></Text>
                             <Text><Link href="">Do My Homework</Link></Text>
