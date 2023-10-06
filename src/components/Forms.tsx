@@ -1,6 +1,8 @@
+import { UserDetails } from "@/redux/SignInSlice"
 import { Box, Button, HStack, Image, Input, Link, Text, VStack } from "@chakra-ui/react"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { MdCreditCard, MdOutlineBeenhere, MdThumbUp } from "react-icons/md"
+import { useDispatch } from "react-redux"
 
 
 interface IFormInput {
@@ -12,8 +14,11 @@ interface IFormInput {
 
 
 export default function Forms() {
+  const dispatch = useDispatch()
   const { register, formState: { errors }, handleSubmit } = useForm<IFormInput>()
-  const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data)
+  const onSubmit: SubmitHandler<IFormInput> = (data) =>
+   {
+    dispatch(UserDetails({SignInName:data.Name, SignInEmail:data.mail}) )}
 
 
   return (

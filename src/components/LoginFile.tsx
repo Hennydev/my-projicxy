@@ -1,6 +1,8 @@
+import { AddUser } from "@/redux/LoginSlice"
 import { Box, Button, HStack, Image, Input, Link, Text, VStack } from "@chakra-ui/react"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { MdCreditCard, MdOutlineBeenhere, MdThumbUp } from "react-icons/md"
+import { useDispatch } from "react-redux"
 
 
 interface IFormInput {
@@ -10,14 +12,18 @@ interface IFormInput {
 }
 
 
-export default function LoginFile() {
-  const { register, formState: { errors }, handleSubmit } = useForm<IFormInput>()
-  const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data)
 
+export default function LoginFile() { 
+  const dispatch = useDispatch()
+  const { register, formState: { errors }, handleSubmit } = useForm<IFormInput>()
+  const onSubmit: SubmitHandler<IFormInput> = (data) => 
+  {
+    dispatch(AddUser({login: data.mail}))
+  } 
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Box rounded={"3xl"} w={{sm:"90%", md:"60%",lg: "75%", xl:"60%"}} boxShadow={"2xl"} mx={"auto"} display={["flex"]} flexDir={["column", "column","column", "row", "row"]} alignItems={"center"} justifyContent={"center"} my={"44"} bg={"black"} py={"8"}>
+      <Box h={"100vh"}  overflowY={"hidden"} rounded={"3xl"} w={{sm:"90%", md:"60%",lg: "75%", xl:"60%"}} boxShadow={"2xl"} mx={"auto"} display={["flex"]} flexDir={["column", "column","column", "row", "row"]} alignItems={"center"} justifyContent={"center"} my={"44"} bg={"black"} py={"8"}>
         <VStack px={""} rounded={"xl"} py={"10"} mx={"6"} w={["90%","95%","95%","50%","50%"]} >
           <Text color={"white"} fontSize={"2xl"} fontWeight={"bold"}>Projicxy</Text>
           <Text color={"white"} fontSize={"2xl"} textAlign={"center"} fontWeight={"bold"}>Delegate Your Tasks to Professionals</Text>

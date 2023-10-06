@@ -11,6 +11,7 @@ import SixthSection from '@/components/SixthSection'
 import SeventhSection from '@/components/SeventhSection'
 import EightSection from '@/components/EightSection'
 import NinthSection from '@/components/NinthSection'
+import Footer from '@/components/Footer'
 const index = () => {
   const [show, setShow] = useState(false)
   return (
@@ -29,6 +30,7 @@ const index = () => {
       <SeventhSection/>
       <EightSection/>
       <NinthSection/>
+    
     </Box>
   )
 }

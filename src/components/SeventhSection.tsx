@@ -15,9 +15,9 @@ const SeventhSection = () => {
   const [dropDown10, setDropDown10] = useState(false)
   return (
     <Box w={{ sm: "90%", md: "80%", lg: "80%", xl: "75%" }} mx={"auto"} my={"14"}>
-      <Text textAlign={"center"} fontWeight={"bold"} fontSize={"4xl"} color={"#013a63"}>Essay writing service FAQs</Text>
-      <Flex my={"8"} >
-        <VStack w={"50%"} mr={"2"}>
+      <Text textAlign={"center"} fontWeight={"bold"} fontSize={["2xl","2xl","4xl"]} color={"#013a63"}>Essay writing service FAQs</Text>
+      <Flex flexDir={["column","column","column","row","row"]} my={"8"} >
+        <VStack w={["95%","95%","50%"]}  mr={["0","0","0","2"]} mb={["3",""]}>
 
           <Box border={"1px"} p={"4"} rounded={"xl"} alignItems={"center"} borderColor={"#013a63"}>
             <HStack display={"flex"} justifyContent={"space-between"}>
@@ -128,7 +128,7 @@ const SeventhSection = () => {
 
 
         </VStack>
-        <VStack ml={"2"} w={"50%"}>
+        <VStack ml={["0","0","2"]} w={["95%","95%","50%"]} mx={["4",""]}>
         <Box border={"1px"} p={"4"} rounded={"xl"} alignItems={"center"} borderColor={"#013a63"}>
             <HStack display={"flex"} justifyContent={"space-between"}>
               <Text w={"80%"} fontWeight={"semibold"}> Will the assigned essay writer follow the guideline specificied in the order</Text>

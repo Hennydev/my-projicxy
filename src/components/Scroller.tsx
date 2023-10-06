@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button, Text, Card, SimpleGrid, CardBody, Heading, CardHeader, CardFooter } from '@chakra-ui/react';
+import { Box, Button, Text, Card, SimpleGrid, CardBody, Heading, CardHeader, CardFooter, Link } from '@chakra-ui/react';
 import { MdArrowBackIosNew, MdArrowForwardIos, MdArrowLeft } from 'react-icons/md';
 
 const OverflowScrollWithButton = () => {
@@ -49,46 +49,46 @@ const OverflowScrollWithButton = () => {
 <Box  display={"flex"} flexDir={"row"} alignItems={"center"} justifyContent={"space-between"}>
           <Card w={"260px"} _hover={{boxShadow:"2xl"}} h={"350px"} bg="transparent" border={"1px"} borderColor={"gray.50"}>
             <CardHeader>
-              <Heading size='md'> Customer dashboard</Heading>
+              <Heading size='md'>Ogunmakinju Olajide</Heading>
             </CardHeader>
             <CardBody bg={"transparent"}>
               <Text>View a summary of all your customers over the last month.</Text>
             </CardBody>
-            <CardFooter>
-              <Button>View here</Button>
+            <CardFooter display={"flex"} alignItems={"center"} justifyContent={"cdenter"}>
+ <Link href='ContactUs'>              <Button>Contact the writer</Button></Link>
             </CardFooter>
           </Card>
           <Card  w={"260px"} _hover={{boxShadow:"2xl"}} h={"350px"} mx={"4"}  bg="transparent" border={"1px"} borderColor={"gray.50"}>
             <CardHeader>
-              <Heading size='md'> Customer dashboard</Heading>
+              <Heading size='md'>Ogunmakinju Olajide</Heading>
             </CardHeader>
             <CardBody bg={"transparent"}>
               <Text>View a summary of all your customers over the last month.</Text>
             </CardBody>
-            <CardFooter>
-              <Button>View here</Button>
+            <CardFooter display={"flex"} alignItems={"center"} justifyContent={"cdenter"}>
+ <Link href='ContactUs'>              <Button>Contact the writer</Button></Link>
             </CardFooter>
           </Card>
           <Card  w={"260px"} _hover={{boxShadow:"2xl"}} h={"350px"}  bg="transparent" border={"1px"} borderColor={"gray.50"}>
             <CardHeader>
-              <Heading size='md'> Customer dashboard</Heading>
+              <Heading size='md'>Ogunmakinju Olajide</Heading>
             </CardHeader>
             <CardBody bg={"transparent"}>
               <Text>View a summary of all your customers over the last month.</Text>
             </CardBody>
-            <CardFooter>
-              <Button>View here</Button>
+            <CardFooter display={"flex"} alignItems={"center"} justifyContent={"cdenter"}>
+ <Link href='ContactUs'>              <Button>Contact the writer</Button></Link>
             </CardFooter>
           </Card>
           <Card  w={"260px"} _hover={{boxShadow:"2xl"}} h={"350px"} mx={"4"}  bg="transparent" border={"1px"} borderColor={"gray.50"}>
             <CardHeader>
-              <Heading size='md'> Customer dashboard</Heading>
+              <Heading size='md'>Ogunmakinju Olajide</Heading>
             </CardHeader>
             <CardBody bg={"transparent"}>
               <Text>View a summary of all your customers over the last month.</Text>
             </CardBody>
-            <CardFooter>
-              <Button>View here</Button>
+            <CardFooter display={"flex"} alignItems={"center"} justifyContent={"cdenter"}>
+ <Link href='ContactUs'>              <Button>Contact the writer</Button></Link>
             </CardFooter>
           </Card>
      </Box> 

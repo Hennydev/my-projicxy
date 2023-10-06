@@ -10,11 +10,11 @@ import {HiOutlineShieldCheck} from "react-icons/hi"
 const FifthSection = () => {
     return (
         <Box w={{ sm: "90%", md: "80%", lg: "80%", xl: "75%" }} mx={"auto"} my={"14"}>
-            <Text textAlign={"center"} fontWeight={"bold"} fontSize={"5xl"} color={"#013a63"}>The perks you get when using our essay writing service</Text>
+            <Text textAlign={"center"} fontWeight={"bold"} fontSize={["2xl","3xl","5xl"]}  color={"#013a63"}>The perks you get when using our essay writing service</Text>
 
-            <Box mt={"20"} display={"flex"} flexDir={"row"}  >
+            <Box mt={"20"} display={"flex"} flexDir={["column","column","row","row","row"]}  >
 
-                <Box w={"50%"} marginRight={"14"}>
+                <Box w={["95%","95%","50%"]} marginRight={["0","14"]} mx={["3", "3", "4","4","4"]}>
                     <VStack w={"full"} >
                         <VStack  w={"full"}  textAlign={"left"} display={"flex"} justifyItems={"flex-start"} alignItems={"flex-start"}>
                             <Text mt={"2"} fontSize={"3xl"} color={"#013a63"} > <TfiWrite /></Text>
@@ -52,7 +52,7 @@ const FifthSection = () => {
                     </VStack>
                 </Box>
 
-                <Box pos={"relative"} rounded={"2xl"} h={"600px"} w={"50%"} border={"1px"} borderColor={"gray.300"}  >
+                <Box pos={"relative"} rounded={"2xl"} h={"600px"} w={["95%","95%","50%"]} mt={["14", "12","12","0"]} mx={["3", "3", "4","4","6"]} border={"1px"} borderColor={"gray.300"}  >
                     <VStack bg={"white"} pos={"absolute"} w={"100%"} right={"4"} bottom={"4"} h={"600px"} border={"1px"} borderColor={"gray.300"} rounded={"xl"}>
                         <Text fontSize={"2xl"} py="4" fontWeight={"bold"} textAlign={"center"}>Prices Includes</Text>
 

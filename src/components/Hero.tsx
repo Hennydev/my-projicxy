@@ -1,4 +1,4 @@
-import { Box, Button, HStack, Image, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, HStack, Image, Link, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { ImQuotesLeft, ImQuotesRight, ImStarFull } from "react-icons/im"
 import { RxRocket } from 'react-icons/rx'
@@ -13,18 +13,18 @@ const Hero = () => {
             mx={"auto"}
             w={{sm:"90%", md:"80%",lg: "75%", xl:"75%"}} >
 
-            <HStack   mx={"auto"} display={"flex"} py={"4"} flexDir={["row"]} alignItems={["center"]} justifyContent={[""]}  my={"4"}>
-                <VStack w={"60%"} display={"flex"} flexDir={"column"} alignItems={"flex-start"} mr={""}>
-                    <Text fontSize={"5xl"} lineHeight={""}  fontWeight={"bold"}>
+            <HStack   mx={"auto"} display={"flex"}  py={"4"} flexDir={["column","column","row"]} alignItems={["center"]} justifyContent={[""]}  my={"4"}>
+                <VStack w={["90%","90%","90%","60%"]} display={"flex"} flexDir={"column"} alignItems={"flex-start"} mr={""}>
+                    <Text fontSize={["3xl","4xl","5xl"]} lineHeight={""}  fontWeight={"bold"}>
                         From stress to success – hire a pro essay writer!
                     </Text>
-                    <Text fontSize={"xl"} lineHeight={""} fontWeight={"semibold"}>
+                    <Text fontSize={["lg","lg","xl"]} lineHeight={""} fontWeight={"semibold"}>
                         Trust your assignments to an essay writing service with the fastest delivery time and fully original content.
                     </Text>
-                    <Button px={"10"} py={"6"} _hover={{ bg: "" }} my={"6"} color={"white"} bg={"#013a63"} rounded={"xl"}>Write my paper</Button>
+                    <Button px={"10"} py={"6"} _hover={{ bg: "" }} my={"6"} color={"white"} bg={"#013a63"} rounded={"xl"}><Link href='ContactUs'>Write My Paper</Link></Button>
                 </VStack>
-                <VStack w={"40%"} display={"flex"} flexDir={"column"} alignItems={"flex-end"} justifyContent={"flex-end"}> 
-                    <VStack >
+                <VStack w={"40%"}  display={["none","none","none","flex"]} flexDir={"column"} alignItems={"flex-end"} justifyContent={"flex-end"}> 
+                    <VStack display={["none","none","none","flex"]} >
                         <HStack w={"55%"} display={"flex"} alignItems={"center"} justifyContent={"space-between"}>
                             <Text color={"#013a63"} fontSize={"4xl"} fontWeight={"bold"}><ImQuotesLeft /></Text>
                             <Image h={"16"} w={"18"} src='asset/rimg.png' alt='avatar' />
@@ -55,14 +55,14 @@ const Hero = () => {
                                 Jicxy
                             </Text>
                         </Box></VStack>
-                    <VStack  display={"flex"} alignItems={"flex-end"} justifyContent={"flex-end"} mt={"2"}>
+                    <VStack   display={["none","none","none","flex"]} alignItems={"flex-end"} justifyContent={"flex-end"} mt={"2"}>
                         <HStack w={"52%"} display={"flex"} alignItems={"flex-end"} justifyContent={"flex-end"} mt={"2"}>
 
                             <Text color={"#013a63"} fontSize={"4xl"} fontWeight={"bold"}><ImQuotesRight /></Text>
                         </HStack>
-                        <HStack bg={""}  display={"flex"} alignItems={"flex-end"} justifyContent={"flex-end"} mt={"2"}>
+                        <HStack  w={"full"} display={"flex"} alignItems={"flex-end"} justifyContent={"flex-end"} mt={"2"}>
                             <Image h={"20"} w={"24"} src='asset/rimg.png' alt='avatar' />
-                            <Box w={"55%"} px={"4"} py={"3"} border={"2px"} borderColor={"#013a63"} roundedBottom={"3xl"} roundedTopRight={"3xl"} borderRight={""}>
+                            <Box w={["full","full","55%"]} px={"4"} py={"3"} border={"2px"} borderColor={"#013a63"} roundedBottom={"3xl"} roundedTopRight={"3xl"} borderRight={""}>
                                 <HStack>
                                     <Text color={"yellow.300"} fontWeight={"bold"} >
                                         <ImStarFull />
@@ -96,7 +96,7 @@ const Hero = () => {
                         <HStack>
                             <VStack>
                                 <Text color={"#013a63"} fontSize={"2xl"} fontWeight={"bold"}>
-                                    1.5M+
+                                    100+
                                 </Text>
                                 <Text lineHeight={"0"} pb={"4"}>
                                     Customers
@@ -104,18 +104,18 @@ const Hero = () => {
                             </VStack>
                             <VStack mx={"8"}>
                                 <Text color={"#013a63"} fontSize={"2xl"} fontWeight={"bold"}>
-                                    1.5M+
+                                    5+
                                 </Text>
                                 <Text lineHeight={"0"} pb={"4"}>
-                                    Customers
+                                    Years
                                 </Text>
                             </VStack>
                             <VStack >
                                 <Text color={"#013a63"} fontSize={"2xl"} fontWeight={"bold"}>
-                                    1.5M+
+                                    100+
                                 </Text>
                                 <Text lineHeight={"0"} pb={"4"}>
-                                    Customers
+                                    Subjects
                                 </Text>
                             </VStack>
                         </HStack>
@@ -126,15 +126,15 @@ const Hero = () => {
                 </VStack>
             </HStack>
             <Box  w={{ sm: "90%", md: "98%", lg: "75%", xl: "80%" }}  mx={"auto"}  my={"8"}>
-            <HStack display={"flex"} flexDir={"row"} justifyContent={"space-evenly"} alignItems={"center"}>
-                            <VStack  px={"6"} py={"8"}>
+            <HStack display={"flex"} flexDir={["column","column","row"]} justifyContent={"space-evenly"} alignItems={"center"}>
+                            <VStack  px={"6"} py={["8"]}>
                                 <Box px={"6"} py={"6"} rounded={"full"} bg={"gray.200"}>
                                 <Text color={"#013a63"} fontSize={"xl"} fontWeight={"bold"}>
                                     <RxRocket/>
                                 </Text>
                                 </Box>
                                 
-                                <Text color={"#013a63"} fontSize={""}  py={""}>
+                                <Text color={"#013a63"} fontSize={""}  py={""} textAlign={"center"}>
                                 Lighting-fast turnaround time
                                 </Text>
                             </VStack>
@@ -145,7 +145,7 @@ const Hero = () => {
                                 </Text>
                                 </Box>
                                 
-                                <Text color={"#013a63"} fontSize={""}  py={""}>
+                                <Text color={"#013a63"} fontSize={""}  textAlign={"center"} py={""}>
                                 Help with any assignment
                                 </Text>
                             </VStack>
@@ -156,7 +156,7 @@ const Hero = () => {
                                 </Text>
                                 </Box>
                                 
-                                <Text color={"#013a63"} fontSize={""}  py={""}>
+                                <Text color={"#013a63"} textAlign={"center"} fontSize={""}  py={""}>
                                 Plagiarism-free content
                                 </Text>
                             </VStack>
@@ -167,8 +167,8 @@ const Hero = () => {
                                 </Text>
                                 </Box>
                                 
-                                <Text color={"#013a63"} fontSize={""}  py={""}>
-                                Writers from the US and Canada
+                                <Text textAlign={"center"} color={"#013a63"} fontSize={""}  py={""}>
+                                Writers from Nigeria, US and Canada
                                 </Text>
                             </VStack>
                             

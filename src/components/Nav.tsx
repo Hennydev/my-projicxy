@@ -13,8 +13,8 @@ const Nav = () => {
         <Box pos={"fixed"} w={"100%"} bg={"#f5f5f5"} boxShadow={"sm"} zIndex="banner" >
 
             <HStack display={"flex"} py={""} flexDir={["row"]} alignItems={["center", "center"]} justifyContent={["space-between"]} w={{sm:"90%", md:"80%",lg: "75%", xl:"75%"}} mx={"auto"}>
-                <Image boxSize={"24"} src={"asset/projicxy.svg"} alt={"logo"} />
-                <HStack display={["none", "none", "flex"]} pos={"relative"} flexDir={["column", "column", "row", "row"]} alignItems={["center", "center"]} justifyContent={["center", "center", "space-between", "space-between"]}><Text>How To Order</Text>
+              <Link href='/'> <Image boxSize={"24"} src={"asset/projicxy.svg"} alt={"logo"} /></Link>  
+                <HStack display={["none", "none","none", "flex"]} pos={"relative"} flexDir={["column", "column", "row", "row"]} alignItems={["center", "center"]} justifyContent={["center", "center", "space-between", "space-between"]}><Text>How To Order</Text>
 
                     {toggleSer ?
                         <HStack onMouseOver={() => setToggleSer(false)} onMouseLeave={() => setToggleSer(true)} mx={"6"} cursor={"pointer"}> <Text>Services</Text>    <Text fontSize={"xl"}><MdOutlineKeyboardArrowUp /></Text></HStack>
@@ -63,13 +63,13 @@ const Nav = () => {
                 </HStack>
 
                 {
-                    navToggle ? <Text cursor={"pointer"} onClick={() => setNavToggle(false)} fontSize={"2xl"} display={["block", "block", "none"]}> <MdOutlineClose /></Text> :
-                        <Text cursor={"pointer"} onClick={() => setNavToggle(true)} fontSize={"2xl"} display={["block", "block", "none"]}> <RxHamburgerMenu /></Text>
+                    navToggle ? <Text cursor={"pointer"} onClick={() => setNavToggle(false)} fontSize={"2xl"} display={["block", "block","block", "none"]}> <MdOutlineClose /></Text> :
+                        <Text cursor={"pointer"} onClick={() => setNavToggle(true)} fontSize={"2xl"} display={["block", "block","block", "none"]}> <RxHamburgerMenu /></Text>
                 }
 
             </HStack>
             {
-                navToggle && <HStack display={["flex", "flex", "none"]} my={"6"} flexDir={["column", "column", "row", "row"]} alignItems={["center", "center"]} justifyContent={["center", "center", "space-between", "space-between"]}><Text>How To Order</Text>
+                navToggle && <HStack display={["flex", "flex","flex", "none"]} my={"6"} flexDir={["column", "column", "column", "row"]} alignItems={["center", "center"]} justifyContent={["center", "center", "space-between", "space-between"]}><Text>How To Order</Text>
 
                     {!toggleSer ?
 
@@ -80,7 +80,7 @@ const Nav = () => {
                         </HStack>
                     }
                     {
-                        toggleSer && < VStack  display={["block", "block", "none"]} textAlign={"center"} onMouseLeave={() => setToggleSer(false)}   >
+                        toggleSer && < VStack  display={["block", "block","block", "none"]} textAlign={"center"} onMouseLeave={() => setToggleSer(false)}   >
                             <Text><Link href="">My Services</Link></Text>
                             <Text my={"3"}><Link href="">Rewrite My Essay</Link></Text>
                             <Text><Link href="">Do My Homework</Link></Text>
@@ -99,7 +99,7 @@ const Nav = () => {
                         </HStack>
                     }
                     {
-                        toggleOffer && < VStack display={["block", "block", "none"]} textAlign={"center"} onMouseLeave={() => setToggleOffer(false)}   >
+                        toggleOffer && < VStack display={["block", "block", "block","none"]} textAlign={"center"} onMouseLeave={() => setToggleOffer(false)}   >
                             <Text><Link href="">My Services</Link></Text>
                             <Text my={"3"}><Link href="">Rewrite My Essay</Link></Text>
                             <Text><Link href="">Do My Homework</Link></Text>

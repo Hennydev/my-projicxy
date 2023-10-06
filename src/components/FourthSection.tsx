@@ -9,11 +9,11 @@ import ReviewScrollContent from './ReviewScrollContent';
 const FourthSection = () => {
     return (
         <Box w={{ sm: "90%", md: "80%", lg: "80%", xl: "75%" }} mx={"auto"} my={"14"}>
-            <Text textAlign={"center"} fontWeight={"bold"} fontSize={"5xl"} color={"#013a63"}>What clients say about our writing service</Text>
-            <Text mx={"24"} fontSize={"md"} fontWeight={"md"} color={"#013a63"} textAlign={"center"} >Check out the latest feedback from learners who use our essay writing services.</Text>
+            <Text textAlign={"center"} fontWeight={"bold"} fontSize={["2xl","3xl","5xl"]} color={"#013a63"}>What clients say about our writing service</Text>
+            <Text mx={["6","24"]} fontSize={"md"} fontWeight={"md"} color={"#013a63"} textAlign={"center"} >Check out the latest feedback from learners who use our essay writing services.</Text>
            
-           <HStack display={"flex"} flexDir={"row"} mt={"10"} alignItems={"center"} justifyContent={"center"}>
-           <HStack border={'1px'} px={"12"} py={"3"} borderColor={"#013a63"} rounded={"xl"}>
+           <HStack display={["none","flex"]} flexDir={"row"} mt={"10"} alignItems={"center"} justifyContent={"center"}>
+           <HStack border={'1px'} px={["12"]} py={"3"} borderColor={"#013a63"} rounded={"xl"}>
                 <Text>Reviews</Text>
                 <Image boxSize={"10"} src={"asset/projicxy.svg"} alt={"logo"} />
             </HStack>

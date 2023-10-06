@@ -5,6 +5,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 import { Provider } from 'react-redux'
 import { store } from '@/redux/store'
+import Layout from '@/components/Layout'
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -22,7 +23,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return(
     <Provider store={store}>
   <ChakraProvider theme={theme}>
+    <Layout>
     <Component {...pageProps} />
+    </Layout>
+  
   </ChakraProvider>
   </Provider>
   )
